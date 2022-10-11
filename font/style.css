@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pulsar';
+    src: local('Pulsar Regular'), local('Pulsar-Regular'),
+        url('PulsarOriginalRegular.woff2') format('woff2'),
+        url('PulsarOriginalRegular.woff') format('woff'),
+        url('PulsarOriginalRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

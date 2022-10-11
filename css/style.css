@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Aire Exterior Regular";
+  src: url(../font/ofont.ru_Aire\ Exterior.ttf);
+}
+@font-face {
+  font-family: "Pulsar";
+  src: url(../font/PulsarOriginalRegular.ttf);
+}
+body {
+  background-color: #141C24;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 47px;
+  align-items: center;
+  padding-bottom: 49px;
+}
+
+.header__icon {
+  display: flex;
+  align-items: center;
+  color: #57D6FF;
+}
+.header__icon span {
+  display: inline-block;
+  font-family: "Pulsar";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-left: 17px;
+}
+
+.navigacion {
+  margin-right: 41px;
+}
+
+.navigacion__list {
+  display: flex;
+}
+
+.navigacion__item {
+  margin-left: 47px;
+}
+
+.navigacion__link {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.section__1 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section__1__container {
+  position: relative;
+  transition: all ease 0.2s;
+}
+
+.slider {
+  width: 99%;
+  overflow: hidden;
+}
+
+.slider_line {
+  position: relative;
+  display: flex;
+  transition: all ease 2s;
+}
+.slider_line img {
+  border-radius: 2%;
+}
+
+.section__1__discription {
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.section__1__discription h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.section__1__discription h1 {
+  font-family: "Aire Exterior";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 97px;
+}
+.section__1__discription a {
+  display: inline-block;
+  padding: 19px 50px;
+  width: 251px;
+  height: 61px;
+  font-family: "Aire Exterior";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  background-color: white;
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 40.91%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 90% 0%, 100% 40.91%, 100% 100%, 0% 100%);
+}
