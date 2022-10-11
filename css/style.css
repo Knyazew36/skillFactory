@@ -1,215 +1,238 @@
-@charset "UTF-8";
-/*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
+@import url(null.css);
 body {
-  height: 100%;
   width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/*--------------------*/
-@font-face {
-  font-family: "Aire Exterior Regular";
-  src: url(../font/ofont.ru_Aire\ Exterior.ttf);
-}
-@font-face {
-  font-family: "Pulsar";
-  src: url(../font/PulsarOriginalRegular.ttf);
-}
-body {
-  background-color: #141C24;
   height: 100vh;
-  color: white;
+  font-family: "Nunito Sans";
+  font-size: 14px;
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1256px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
-.header__wrapper {
+.header {
+  background-color: rgb(19, 19, 19);
+  padding: 36px 0;
+}
+
+.header__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 47px;
   align-items: center;
-  padding-bottom: 49px;
 }
 
-.header__icon {
-  display: flex;
-  align-items: center;
-  color: #57D6FF;
-}
-.header__icon span {
-  display: inline-block;
-  font-family: "Pulsar";
+a.logo__link {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 23px;
+  font-size: 11px;
+  line-height: 15px;
   text-transform: uppercase;
-  margin-left: 17px;
-}
-
-.navigacion {
-  margin-right: 41px;
+  color: #E3B873;
+  margin-right: 120px;
 }
 
 .navigacion__list {
   display: flex;
+  gap: 47px;
 }
 
 .navigacion__item {
-  margin-left: 47px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
 }
 
-.navigacion__link {
+a.contacs {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #E3B873;
+  margin-left: 89px;
+  margin-right: 45px;
+}
+
+.header__button {
+  padding: 13px 33px;
   color: white;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 16px;
+  background: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .section__1 {
-  max-width: 1200px;
-  margin: 0 auto;
+  background-image: url(../image/Group\ 7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 194px 0 208px 134px;
 }
 
-.section__1__container {
-  position: relative;
-  transition: all ease 0.2s;
+.section__1__tittle {
+  display: block;
+  max-width: 519px;
+  margin-bottom: 24px;
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.section__1__tittle span {
+  color: #E3B873;
 }
 
-.slider {
-  width: 99%;
-  overflow: hidden;
+.section__1__text {
+  display: block;
+  max-width: 519px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
 }
 
-.slider_line {
-  position: relative;
+.section__1__button {
+  width: 207px;
+  height: 51px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  background-color: transparent;
+  color: white;
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+.section__1__button:hover {
+  background: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  border-color: transparent;
+}
+
+.section__2 {
+  background: #131313;
+  padding: 107px 0 414px 0;
+}
+.section__2 .container {
   display: flex;
-  transition: all ease 2s;
-}
-.slider_line img {
-  border-radius: 2%;
 }
 
-.section__1__discription {
-  position: absolute;
-  max-height: 100%;
-  max-width: 100%;
-  top: 40%;
-  left: 0;
-  right: 0;
-  text-align: center;
+.section__2__column {
+  display: block;
 }
-.section__1__discription h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+
+.section__2__tittle {
+  max-width: 156px;
+  margin-bottom: 34px;
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.section__2__text {
+  max-width: 442px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-bottom: 41px;
+  margin-right: 50px;
+}
+
+.section__2__carts {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 442px;
+}
+
+.section__2__item {
+  display: block;
+  min-width: 174px;
+  margin-right: 29px;
+  margin-bottom: 34px;
+}
+.section__2__item h3 {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+.section__2__item p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.section__2__links {
+  max-width: 623px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+a.section__2__link {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 14px;
   line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
 }
-.section__1__discription h1 {
-  font-family: "Aire Exterior";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 48px;
-  margin-bottom: 97px;
+
+.section__2__swiper {
+  width: 679px;
+  height: 482px;
+  margin-top: 40px;
+  background-image: url(../image/Mask\ Group.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.section__1__discription a {
-  display: inline-block;
-  padding: 19px 50px;
-  width: 251px;
-  height: 61px;
-  font-family: "Aire Exterior";
-  font-style: normal;
+
+.section__3 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__3__tittle {
+  font-family: "Yeseva One";
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: #000000;
-  background-color: white;
-  -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 40.91%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 90% 0%, 100% 40.91%, 100% 100%, 0% 100%);
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.sublogo {
+  display: flex;
+  align-items: center;
+}
+
+.section__3__video {
+  width: 817px;
+  height: 434px;
+  background-image: url(../image/Mask\ Group2.png);
 }
