@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <div class="container header__container">
       <a href="#" class="logo__link">IC "Repair Design Project"</a>
       <nav class="navigacion">
@@ -95,7 +95,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="section__3">
       <div class="container">
         <h2 class="section__3__tittle">
@@ -116,12 +116,24 @@
           from one of our facilities!
           Leave a request below and you will receive a link to the broadcast.
         </p>
-        <form action="get" class="form section__3__form">
-          <input type="text" placeholder="What is your name:">
-          <input type="number" placeholder="Your phone number:">
-          <button class="button section__3__button">SUBMIT YOUR APPLICATION</button>
-          <input type="checkbox" class="section__3__checkbox">
-          <p class="form__text">I agree to the processing of personal data</p>
+        <form action="#" class="form section__3__form">
+          <div class="form__row">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" placeholder="What is your name:" id="name" class="">
+            </div>
+            <div class="form-group">
+              <label for="name">Phone:</label>
+              <input type="tel" placeholder="Your phone number:" id="number">
+            </div>          
+            <button  type="submit" class="button section__3__button">SUBMIT</button>
+          </div>
+          <div class="form__row">            
+              <input type="checkbox" class="section__3__checkbox">
+              <p class="form__text">I agree to the processing of personal data</p>            
+          </div>
+          
+            
         </form>
       </div>
     </section>
@@ -155,6 +167,7 @@
       </div>
     </section>
   </main>
+  Удалить
 </body>
 
 </html>
