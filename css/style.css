@@ -459,12 +459,13 @@ a.section__2__link {
 .section__5 {
   margin-top: 300px;
   height: 645px;
+  position: relative;
 }
 .section__5 .container {
   display: flex;
   background-image: url(../image/image\ 6.1.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: -148%;
 }
 
@@ -568,4 +569,18 @@ a.section__2__link {
 
 .form__text__section__5 {
   color: white;
+}
+
+.section__5__stock {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+}
+.section__5__stock {
+  max-width: 344px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #E3B873;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
