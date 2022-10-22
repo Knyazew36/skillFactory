@@ -5,7 +5,7 @@ body {
     height: 100vh;
     font-family: 'Nunito Sans';
     font-size: 14px;
-    
+
 
 }
 
@@ -1283,17 +1283,20 @@ a.section__2__link {
 
     a.contacs {
         color: white;
+        margin: 0;
     }
 
     .section__1__tittle {
         font-size: 23px;
         line-height: 132.83%;
+        text-align: center;
     }
 
     .section__1__text {
         font-size: 14px;
         line-height: 135.84%;
         padding-bottom: 32px;
+        text-align: center;
 
     }
 
@@ -1302,17 +1305,131 @@ a.section__2__link {
         margin-bottom: 26px;
     }
 
-
-    .section__3__button {
-        transform: none;
+    .section__2 {
+        padding: 36px 0 175px 0;
     }
 
+    .section__2__carts {
+
+        top: 520px;
+    }
+
+    .section__2__tittle {
+        font-size: 22px;
+        width: 250px;
+        padding-bottom: 22px;
+
+    }
+
+    .section__2__text {
+        max-width: 311px;
+        font-size: 11px;
+    }
+
+    .section__2__carts {
+        padding: 0;
+        display: flex;
+        position: static;
+
+    }
+
+    .section__2__swiper {
+        height: 240px;
+        max-width: 340px;
+    }
+
+    .section__2__item {
+        margin: 0;
+
+        & h3 {
+            font-size: 14px;
+        }
+
+        & p {
+            font-size: 11px;
+        }
+    }
+
+    .section__3 {
+        margin-top: 0px;
+    }
+
+    .section__3__video {
+        max-width: 340px;
+        max-height: 207px;
+    }
+
+    .section__3__form {
+        padding-bottom: 60px;
+    }
+
+    .play {
+        width: 67px;
+        height: 67px;
+    }
+
+    .section__3__button {
+        transform: translateX(0);
+        position: absolute;
+        bottom: -92px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .section__3__text {
+        font-size: 11px;
+        line-height: 169.8%;
+        color: white;
+
+        text-align: center;
+    }
+
+    .section__4 {}
+
+    .section__4__items {
+        width: 100%;
+    }
+.item {
+    height: 365px;
+    background-size: cover;
+    background-position: center;
+}
+    .item__discription {
+        padding: 21px 41px 0 31px;
+        width: 241px;
+        left: 0;
+        top: 208px;
+        height: 270px;      
+    
+      
+        & h3 {
+            font-size: 13px;
+        }
+
+        & ul {
+            font-size: 13px;
+            & li{
+                line-height: 169.8%;
+            }
+        }
+    }
+.section__4__button{
+    font-size: 15px;
+    width: 190px;
+    height: 40px;
+    margin-top: 15px;
+}
     .form__row_1 {
         flex-direction: column;
     }
 
     .section__6__column__left {
-        display: none;
+       
+        & p{
+            display: none;
+        }
     }
-
+.section__7{
+    display: none;
+}
 }
