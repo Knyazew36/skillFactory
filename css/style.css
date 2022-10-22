@@ -10,6 +10,7 @@ body {
   max-width: 1256px;
   padding: 0 10px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header {
@@ -1128,10 +1129,32 @@ a.section__2__link {
   .navigacion {
     display: none;
   }
+  .section__1 {
+    padding: 85px 0 61px 0;
+  }
+  a.contacs {
+    color: white;
+  }
+  .section__1__tittle {
+    font-size: 23px;
+    line-height: 132.83%;
+  }
+  .section__1__text {
+    font-size: 14px;
+    line-height: 135.84%;
+    padding-bottom: 32px;
+  }
+  .section__1__button {
+    width: 338px;
+    margin-bottom: 26px;
+  }
   .section__3__button {
     transform: none;
   }
   .form__row_1 {
     flex-direction: column;
+  }
+  .section__6__column__left {
+    display: none;
   }
 }
