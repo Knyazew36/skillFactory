@@ -78,6 +78,10 @@ a.contacs {
   transform: scale(1.1);
 }
 
+.main {
+  overflow: hidden;
+}
+
 .section__1 {
   background-image: url(../image/Group\ 7.png);
   background-repeat: no-repeat;
@@ -146,6 +150,7 @@ a.contacs {
 }
 
 .section__2__tittle {
+  padding-top: 70px;
   max-width: 156px;
   margin-bottom: 34px;
   font-family: "Yeseva One";
@@ -156,6 +161,11 @@ a.contacs {
   color: #E3B873;
 }
 
+@media (max-width: 1109px) {
+  .section__2__tittle {
+    padding-top: 0;
+  }
+}
 .section__2__text {
   max-width: 442px;
   font-weight: 400;
@@ -235,12 +245,13 @@ a.section__2__link {
 }
 
 .section__2__swiper {
-  width: 679px;
+  max-width: 679px;
   height: 482px;
   margin-top: 40px;
   background-image: url(../image/Mask\ Group.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .section__3 {
@@ -417,6 +428,7 @@ a.section__2__link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: visible;
 }
 
 .section__4__tittle {
@@ -502,7 +514,7 @@ a.section__2__link {
 }
 
 .section__5 {
-  margin-top: 300px;
+  margin-top: 250px;
   height: 645px;
   position: relative;
 }
@@ -631,7 +643,7 @@ a.section__2__link {
 }
 
 .section__6 {
-  margin-top: 251px;
+  margin-top: 280px;
   background-image: url(../image/Group\ 22.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -640,6 +652,7 @@ a.section__2__link {
 }
 .section__6 .container {
   display: flex;
+  overflow: visible;
 }
 
 .section__6__column__left {
@@ -668,27 +681,30 @@ a.section__2__link {
 }
 
 .section__6__column__right {
-  position: relative;
+  display: flex;
 }
 .section__6__column__right img {
-  width: auto;
-  height: auto;
+  min-width: 354px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 354px;
 }
 
 .section__6__1 {
-  transform: translateY(-180px);
+  height: 556px;
+  transform: translateY(-177px);
 }
 
 .section__6__2 {
-  transform: translate(-358px, 422px);
+  transform: translateY(-129px);
 }
 
 .section__6__3 {
-  transform: translate(406px, -806px);
+  transform: translateY(-260px);
 }
 
 .section__6__4 {
-  transform: translate(48px, -494px);
+  transform: translateY(-212px);
 }
 
 .section__7 .container {
@@ -958,6 +974,41 @@ a.section__2__link {
     margin-top: 20px;
   }
 }
+@media (max-width: 943px) {
+  .section__5 .container {
+    flex-direction: column;
+  }
+  .section__5__left {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .section__5__column {
+    padding-top: 0;
+    margin: 0 auto;
+  }
+  .section__6__column__left {
+    transform: translateY(-60px);
+  }
+  .section__5 {
+    margin-top: 209px;
+  }
+}
+@media (max-width: 876px) {
+  .navigacion__list {
+    display: none;
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 910px) {
+  .section__6__column__left p {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 767px) {
   .container {
     padding: 0 17px;
@@ -1125,6 +1176,26 @@ a.section__2__link {
     height: 93px;
   }
 }
+@media screen and (max-width: 693px) {
+  .section__1 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .section__1__tittle {
+    margin: 0 auto;
+  }
+  .section__1__text {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 685px) {
+  .section__3__button {
+    transform: none;
+    position: absolute;
+    bottom: 0;
+    left: 60vw;
+  }
+}
 @media screen and (max-width: 375px) {
   .navigacion {
     display: none;
@@ -1153,9 +1224,10 @@ a.section__2__link {
   }
   .section__2 {
     padding: 36px 0 175px 0;
+    position: relative;
   }
   .section__2__carts {
-    top: 520px;
+    bottom: 0px;
   }
   .section__2__tittle {
     font-size: 22px;
@@ -1170,13 +1242,14 @@ a.section__2__link {
     padding: 0;
     display: flex;
     position: static;
+    position: absolute;
   }
   .section__2__swiper {
     height: 240px;
     max-width: 340px;
   }
   .section__2__item {
-    margin: 0;
+    margin-right: 0;
   }
   .section__2__item h3 {
     font-size: 14px;
@@ -1186,6 +1259,9 @@ a.section__2__link {
   }
   .section__3 {
     margin-top: 0px;
+  }
+  .section__3 .container {
+    overflow: visible;
   }
   .section__3__video {
     max-width: 340px;
@@ -1204,6 +1280,7 @@ a.section__2__link {
     bottom: -92px;
     width: 100%;
     z-index: 10;
+    left: 0;
   }
   .section__3__text {
     font-size: 11px;
@@ -1244,10 +1321,102 @@ a.section__2__link {
   .form__row_1 {
     flex-direction: column;
   }
+  .section__6 {
+    overflow: visible;
+    background-image: none;
+    padding: 20px 0 200px 0;
+    margin-top: 50px;
+    height: 100%;
+  }
+  .section__6 .container {
+    display: block;
+    overflow: visible;
+    height: 220px;
+  }
+  .section__6__column__left h2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
   .section__6__column__left p {
     display: none;
   }
+  .section__6__column__right {
+    max-height: 242px;
+    z-index: 2;
+    overflow: hidden;
+    top: 4px;
+  }
+  .section__6__column__right img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .section__6__1 {
+    transform: none;
+    height: auto;
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section__6__column__right {
+    z-index: 30;
+  }
+  .form {
+    width: 100%;
+  }
   .section__7 {
     display: none;
+  }
+  .section__8 {
+    margin: 0;
+    background-color: #181818;
+    background-image: none;
+    padding-top: 40 px;
+    height: auto;
+  }
+  .section__8 .container {
+    transform: none;
+  }
+  .section__8__form {
+    padding: 0;
+  }
+  .section__8__form h2 {
+    margin-bottom: 52px;
+  }
+  .form-group input {
+    width: 100%;
+    margin-bottom: 63px;
+  }
+  .section__8__firstRow {
+    margin: 0;
+  }
+  .form__row {
+    padding: 0;
+  }
+  .button__section__8 {
+    right: 0;
+    bottom: -84px;
+  }
+  .section__8__tittle {
+    margin-top: 42px;
+    order: 1;
+    font-size: 18px;
+  }
+  .cart {
+    height: auto;
+    margin-top: 79px;
+  }
+  .section__8__soc {
+    order: 2;
+  }
+  .soc {
+    margin: 0;
+  }
+  .soc:nth-child(1) {
+    margin-right: 10px;
   }
 }
