@@ -1196,6 +1196,34 @@ a.section__2__link {
     left: 60vw;
   }
 }
+@media (max-width: 591px) {
+  .section__2__carts {
+    padding: 0;
+  }
+}
+@media (max-width: 493px) {
+  .section__1__button {
+    width: 338px;
+    margin-bottom: 26px;
+  }
+  .section__1__text {
+    padding-bottom: 32px;
+  }
+  .section__2__carts {
+    display: flex;
+    position: static;
+    position: absolute;
+  }
+  .section__2__item {
+    margin-right: 0;
+  }
+  .section__2__item h3 {
+    font-size: 14px;
+  }
+  .section__2__item p {
+    font-size: 11px;
+  }
+}
 @media screen and (max-width: 375px) {
   .navigacion {
     display: none;
@@ -1215,12 +1243,7 @@ a.section__2__link {
   .section__1__text {
     font-size: 14px;
     line-height: 135.84%;
-    padding-bottom: 32px;
     text-align: center;
-  }
-  .section__1__button {
-    width: 338px;
-    margin-bottom: 26px;
   }
   .section__2 {
     padding: 36px 0 175px 0;
@@ -1238,24 +1261,9 @@ a.section__2__link {
     max-width: 311px;
     font-size: 11px;
   }
-  .section__2__carts {
-    padding: 0;
-    display: flex;
-    position: static;
-    position: absolute;
-  }
   .section__2__swiper {
     height: 240px;
     max-width: 340px;
-  }
-  .section__2__item {
-    margin-right: 0;
-  }
-  .section__2__item h3 {
-    font-size: 14px;
-  }
-  .section__2__item p {
-    font-size: 11px;
   }
   .section__3 {
     margin-top: 0px;
