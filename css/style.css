@@ -413,7 +413,7 @@ a.section__2__link {
   transition: 0.4s;
 }
 
-.section__3__checkbox:checked + .fake::before {
+.form__checkbox:checked + .fake::before {
   opacity: 1;
 }
 
@@ -594,33 +594,38 @@ a.section__2__link {
   color: #FFFFFF;
 }
 
-.form__row__section__5 {
+.row__section__5 {
   display: block;
   padding: 0;
 }
 
-.form-group__section__5 {
+.row__bottom__s5 {
+  padding-top: 0;
+  justify-content: start;
+}
+
+.group__section__5 {
   width: 408px;
   margin-bottom: 48px;
 }
-.form-group__section__5 input {
+.group__section__5 input {
   color: white;
   background-color: black;
 }
-.form-group__section__5 input::-moz-placeholder {
+.group__section__5 input::-moz-placeholder {
   color: #FFFFFF;
 }
-.form-group__section__5 input:-ms-input-placeholder {
+.group__section__5 input:-ms-input-placeholder {
   color: #FFFFFF;
 }
-.form-group__section__5 input::placeholder {
+.group__section__5 input::placeholder {
   color: #FFFFFF;
 }
-.form-group__section__5 label {
+.group__section__5 label {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.button__section__4 {
+.button__section__5 {
   margin-top: 30px;
   float: right;
   margin-right: 20px;
@@ -628,7 +633,7 @@ a.section__2__link {
   height: 51px;
 }
 
-.form__text__section__5 {
+.text__section__5 {
   color: white;
 }
 
@@ -867,7 +872,7 @@ a.section__2__link {
   justify-content: center;
 }
 
-.form__row__section__8 {
+.row__section__8 {
   display: block;
 }
 
