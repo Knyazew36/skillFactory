@@ -336,16 +336,21 @@ a.section__2__link {
     color: #363636;
     margin-bottom: 55px;
 }
-
+//---------------------
 .form {}
 
 .section__3__form {
     display: block;
 }
 
-.form__row {
+.row__top {
     display: flex;
     padding-top: 37px;
+}
+.row__bottom {
+    display: flex;
+    padding-top: 20px;
+    
 }
 
 .form-group {
@@ -379,7 +384,7 @@ a.section__2__link {
     }
 }
 
-.section__3__button {
+.form__button {
     background: #E3B873;
     box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
     border-radius: 2px;
@@ -397,20 +402,19 @@ a.section__2__link {
     }
 }
 
-.form__row {
-    display: flex;
+.form__row {    
     position: relative;
     justify-content: center;
 
 }
 
 
-.section__3__checked {
+.form__checked {
     display: flex;
     align-items: center;
 }
 
-.section__3__checkbox {
+.form__checkbox {
     display: none;
 }
 
@@ -449,6 +453,10 @@ a.section__2__link {
     color: #181818;
 }
 
+
+
+
+//---------------------
 .section__4 {
     margin-top: 147px;
 
