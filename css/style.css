@@ -1075,8 +1075,12 @@ a.section__2__link {
   .section__3__video {
     width: 100%;
   }
-  .section__3__form {
+  .form {
     width: 100%;
+    background-color: #131313;
+  }
+  .form__row {
+    flex-direction: column;
   }
   .form-group {
     width: 100%;
